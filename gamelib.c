@@ -348,7 +348,7 @@ static void genera_mappa()
         zona_mondoreale->avanti = NULL;
         zona_mondoreale->indietro = indietro_mondo_reale;
         zona_mondoreale->link_soprasotto = NULL;
-        // In genera_mappa, dopo malloc di zona_mondoreale:
+
         for (int j = 0; j < MAX_GIOCATORI; j++)
         {
             zona_mondoreale->giocatori_morti[j] = NULL;
@@ -2000,7 +2000,7 @@ void gioca()
                 }
 
                 free(giocatori_morti[i]);
-                giocatori_morti[i] = NULL; // IMPORTANTE: azzera il puntatore
+                giocatori_morti[i] = NULL; 
             }
         }
 
